@@ -2,9 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index/src/main.js",
   "scripts": {
-    "start": "nodemon --inspect main.js",
+    "start": "nodemon --inspect index/src/main.js",
+    "watch": "node-sass --watch index/scss/ --output index/src/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +26,9 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
+    "ejs": "^3.1.6",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
   }
 }
