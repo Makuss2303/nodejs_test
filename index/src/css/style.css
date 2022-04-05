@@ -1,14 +1,19 @@
+.content {
+  padding-left: 5%;
+  padding-right: 5%; }
+
 .hello {
   font-size: 40px;
   color: lightseagreen;
   font-weight: bold;
   text-align: center;
-  margin-top: 5%; }
+  margin-top: 2%; }
 
 #btn1 {
   font-size: 35px;
   background-color: salmon;
-  border-color: salmon; }
+  border-color: salmon;
+  height: 100%; }
 
 .btn-check:focus + #btn1, #btn1:focus {
   box-shadow: 0 0 0 0.25rem rgba(251, 144, 132, 0.5); }
@@ -16,9 +21,11 @@
 #btn2 {
   font-size: 35px;
   background-color: lightseagreen;
-  border-color: lightseagreen; }
+  border-color: lightseagreen;
+  height: 100%; }
 
 #btn3 {
   font-size: 35px;
   background-color: skyblue;
-  border-color: skyblue; }
+  border-color: skyblue;
+  height: 100%; }
