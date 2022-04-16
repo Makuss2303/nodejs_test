@@ -10,6 +10,11 @@ const app = express()
 const port = 3000
 const route = require('./route')
 
+const db = require('./config/db')
+
+//connect db
+db.connect()
+
 // static and check path
 //console.log('path', __dirname)
 app.use(express.static(__dirname))
@@ -28,9 +33,10 @@ app.use(express.json())
 app.set('view engine', 'ejs')
 app.set('views', './index/src/ejsTemplate')
 
+
 route(app)
 app.listen(port, () => {
-  console.log(`Example app listening on port http://localhost:${port}`)
+  console.log(`App listening on port http://localhost:${port}`)
 })
 
 

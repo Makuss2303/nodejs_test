@@ -29,3 +29,7 @@
   background-color: skyblue;
   border-color: skyblue;
   height: 100%; }
+
+.col-listfilm {
+  padding: 0px 0px;
+  max-width: 75%; }

@@ -3,8 +3,8 @@ const router = express.Router() //Router() hàm có sẵn
 const searchController = require('../app-controller/SearchController')
 
 //route here
-router.use('/:random', searchController.show)
+router.get('/:slug', searchController.show)
 
 
-router.use('/', searchController.index)
+router.get('/', searchController.index)
 module.exports = router

@@ -4,9 +4,9 @@ class SearchController {
     index(req, res) {
         res.render('main')
     }
-    //[GET] -> /search/:random
+    //[GET] -> /search/:slug
     show(req, res){
-        res.send('Check OK!')
+        res.send('Check search page OK!')
     }
 }
 
